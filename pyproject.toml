@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "imputation-notebook"
+version = "0.1.0"
+description = "Imputation utilities recovered from Colab"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Franklin Hiciano" }]
+dependencies = [
+  # put runtime deps here, or keep them in requirements.txt if you prefer
+  "pandas",
+  "numpy"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
